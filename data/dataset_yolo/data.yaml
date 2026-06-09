@@ -1,0 +1,17 @@
+# Fichier de configuration du Dataset pour YOLOv8
+# Ce fichier définit l'emplacement des images et les classes pour l'entraînement.
+
+path: data/dataset_yolo # Chemin relatif depuis la racine du projet local (à adapter sous Google Colab si nécessaire)
+train: train/images     # Images d'entraînement
+val: valid/images       # Images de validation
+test: test/images       # Images de test (optionnel)
+
+# Nombre de classes
+nc: 4
+
+# Noms des classes (uniquement les pièces marocaines demandées)
+names:
+  0: coin_1dh
+  1: coin_2dh
+  2: coin_5dh
+  3: coin_10dh
