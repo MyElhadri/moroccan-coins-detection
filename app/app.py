@@ -6,8 +6,8 @@ from PIL import Image
 # Ajouter le répertoire racine au PATH pour des imports sécurisés
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from app.detector import CoinsDetector
-from app.utils import draw_beautiful_detections, format_currency, save_prediction
+from detector import CoinsDetector
+from utils import draw_beautiful_detections, format_currency, save_prediction
 
 # Configuration de la page Streamlit
 st.set_page_config(
